@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const div = document.createElement("div");
     div.setAttribute("id", "rowDiv");
     container.appendChild(div);
-    div.setAttribute("style", `background: black; height: ${squareSize}px; width: ${squareSize}px;`);
+
+    div.setAttribute("style", 
+    `background: rgb(${Math.floor(Math.random()* 256)} 0 0);
+     height: ${squareSize}px;
+     width: ${squareSize}px;`);
 
 // Paint by hovering
     div.addEventListener("mousemove", () => {
